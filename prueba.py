@@ -1,5 +1,3 @@
-import pandas as pd
-
 clients = {
     "Waldon Astling": 1.83,
     "Catherine MacTerlagh": 0.15,
@@ -13,6 +11,4 @@ clients = {
     "Maynord Lawrance": 0.33
 }
 
-df = pd.DataFrame([[key, clients[key]] for key in clients.keys()], columns=['Name', 'Amount'])
-
-print("El diccionario es el siguiente: \n", df)
+print("El diccionario es el siguiente: \n", clients)
