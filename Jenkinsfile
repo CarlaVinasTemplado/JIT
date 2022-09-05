@@ -1,12 +1,5 @@
 pipeline {
-    agent {
-              docker {
-                args '--network=host'
-                image 'docker-python-36'
-                label 'paqfaast09'
-              }
-     }
-
+    agent any
     parameters {
         extendedChoice bindings: '', description: 'needed json parameters', groovyClasspath: '', groovyScript: '''import net.sf.json.JSONObject
 
