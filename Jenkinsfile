@@ -1,5 +1,4 @@
 pipeline {
-    agent any
     node {
         timeout(time: 5, unit: "MINUTES") {
             INPUT_PARAMS = input(
@@ -28,14 +27,6 @@ pipeline {
                 sh 'python3 task.py'
           }
        }
-
-     
     }
-          post {
-            always {
-              cleanWs()
-
-            }
-      }
 }
 
