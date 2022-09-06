@@ -11,13 +11,6 @@ pipeline {
                 sh 'python3 prueba.py'
           }
        }
-
-     
     }
-          post {
-            always {
-              cleanWs()
-
-            }
-      }
 }
+
